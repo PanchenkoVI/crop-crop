@@ -4,15 +4,15 @@ import picocli.CommandLine;
 
 public class ConsoleAttributes {
     @CommandLine.Parameters
-    String[] arg;
-    @CommandLine.Option(names = {"--resize"}, split = ",", description = "resize")
-    public Integer[] re;
+    public  String[] arg;
+    @CommandLine.Option(names = {"--resize"}, description = "resize")
+    public Integer[] reO;
     @CommandLine.Option(names = {"--quality"}, description = "quality")
-    public Integer[] qlt;
-    @CommandLine.Option(names = {"--crop"}, split = ",", description = "crop")
-    public Integer[] cp;
+    public double qltO;
+    @CommandLine.Option(names = {"--crop"}, description = "crop")
+    public Integer[] cpO;
     @CommandLine.Option(names = {"--blur"}, description = "blur")
-    public Integer[] br;
+    public int brO;
     @CommandLine.Option(names = {"--format"}, description = "format")
-    public String[] ft;
+    public String ftO;
 }
